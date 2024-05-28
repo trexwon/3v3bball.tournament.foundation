@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png"/>
+    <link rel="apple-touch-icon" href="icon.png"/>
+    <title>3v3 Basketball Fund-Raiser Event</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      font-weight: bold;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      background-color: #FF914D;
+      padding: 10px;
+    }
+    .icon {
+      width: 90px;
+      height: 90px;
+      transition: transform 0.3s;
+    }
+    .icon:hover {
+      transform: scale(1.2);
+    }
+    .menu {
+      margin-left: 50px;
+      display: flex;
+      gap: 50px;
+      font-size: 20px
+    }
+    .menu a {
+      text-decoration: none;
+      color: white;
+      padding: 5px;
+      position: relative;
+    }
+    .menu a::after {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      border: 1px solid white;
+      opacity: 0;
+      transition: opacity 0.3s;
+      border-radius: 10px;
+    }
+    .menu a:hover::after {
+        opacity: 1;
+    }
+
+    .menu a.highlight {
+      background-color: black;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 10px;
+    }
+
+    /* 모든 사이트 */
+
+    /* 메인 사이트 */
+    video {
+      position: absolute;
+      left: 50%;
+      width: 1440px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      margin-top: 400px;
+      z-index: -1;
+      transform: translate(-50%, -50%);
+    }
+
+    .bottom {
+      margin-top: 850px;
+      font-size: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+
+    .copyright {
+      width: 1440px;
+      height: 100px;
+      background-color: #FF914D;
+      display: grid;
+      place-items: center;
+      text-align: center;
+    }
+    </style>
+</head>
+<body>
+  <div class="header">
+    <a href="index.html">
+    <img src="icon.png" alt="Icon" class="icon">
+    </a>
+
+  <div class="menu">
+        <a href="1.html">Aim/Mission Purpose</a>
+        <a href="2.html">Why is it important?</a>
+        <a href="3.html">NGOs Info</a>
+        <a href="4.html">How can YOU help?</a>
+        <a href="5.html">About Us</a>
+        <a href="6.html">Register NOW</a>
+      </div>
+    </div>
+
+<video autoplay loop muted>
+       <source src="video.mp4" type="video/mp4">
+       <source src="video.mp4" type="video/webm">
+       <source src="video.mp4" type="video/ogg">
+</video>
+
+<div class="bottom">
+  <p>What events are in there?</p>
+</div>
+
+<div class="introduce_all">
+  <img src="introduce.png" class="image" width="1300" height="740">
+  <img src="introduce2.png" class="image" width="1300" height="740">
+  <img src="introduce3.png" class="image" width="1300" height="740">
+</div>
+
+<div class="copyright">
+  <p>Copyright © 2024 3v3 Basketball Tournament Foundation</p>
+</div>
+</body>
+</html>

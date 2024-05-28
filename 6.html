@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="icon.png"/>
+  <link rel="apple-touch-icon" href="icon.png"/>
+  <title>3v3 Basketball Fund-Raiser Event</title>
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    background-color: #FF914D;
+    padding: 10px;
+  }
+  .icon {
+    width: 90px;
+    height: 90px;
+    transition: transform 0.3s;
+  }
+  .icon:hover {
+    transform: scale(1.2);
+  }
+  .menu {
+    margin-left: 50px;
+    display: flex;
+    gap: 50px;
+    font-size: 20px
+  }
+  .menu a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    position: relative;
+  }
+  .menu a::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 1px solid white;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 10px;
+  }
+  .menu a:hover::after {
+      opacity: 1;
+  }
+
+  .form-container {
+             width: 1440px;
+             height: 400px;
+             padding: 20px;
+             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+             background-color: white;
+             box-sizing: border-box;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: flex-start;
+         }
+         .form-container label {
+             margin-top: 10px;
+         }
+         .form-container input, .form-container textarea {
+             width: calc(100% - 20px);
+             padding: 10px;
+             margin-top: 5px;
+             margin-bottom: 20px;
+             box-sizing: border-box;
+         }
+         .form-container textarea {
+             height: 100px;
+         }
+         .form-container button {
+             padding: 10px 20px;
+             cursor: pointer;
+             background-color: #4CAF50;
+             color: white;
+             border: none;
+             margin-top: 20px;
+         }
+         .thank-you-message {
+             display: none;
+         }
+  .copyright_2 {
+    width: 1440px;
+    height: 100px;
+    background-color: #FF914D;
+    display: grid;
+    place-items: center;
+    text-align: center;
+  }
+
+  </style>
+</head>
+
+<body>
+  <div class="header">
+
+    <a href="index.html">
+    <img src="icon.png" alt="Icon" class="icon">
+    </a>
+
+      <div class="menu">
+        <a href="1.html">Aim/Mission Purpose</a>
+        <a href="2.html">Why is it important?</a>
+        <a href="3.html">NGOs Info</a>
+        <a href="4.html">How can YOU help?</a>
+        <a href="5.html">About Us</a>
+        <a href="6.html">Register NOW</a>
+      </div>
+    </div>
+
+    <div class="about_us_image">
+      <img src="register.png" alt="image_1" class="image_1">
+    </div>
+
+    <div class="form-container">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message"></textarea>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+
+        <div class="thank-you-message">
+            Thank you!!
+        </div>
+    </div>
+
+<div class="copyright_2">
+  <p>Copyright © 2024 3v3 Basketball Tournament Foundation</p>
+</div>
+<script>
+function submitForm() {
+        document.querySelector('.form-container').innerHTML = '<div class="thank-you-message">Thank you!!</div>';
+    }
+</script>
+</body>
+</html>

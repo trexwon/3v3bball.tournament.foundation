@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="icon.png"/>
+  <link rel="apple-touch-icon" href="icon.png"/>
+  <title>3v3 Basketball Fund-Raiser Event</title>
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    background-color: #FF914D;
+    padding: 10px;
+  }
+  .icon {
+    width: 90px;
+    height: 90px;
+    transition: transform 0.3s;
+  }
+  .icon:hover {
+    transform: scale(1.2);
+  }
+  .menu {
+    margin-left: 50px;
+    display: flex;
+    gap: 50px;
+    font-size: 20px
+  }
+  .menu a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    position: relative;
+  }
+  .menu a::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 1px solid white;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 10px;
+  }
+  .menu a:hover::after {
+      opacity: 1;
+  }
+
+  .menu a.highlight {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+  }
+
+  .people_image_image {
+    float: left;
+    margin-right: 10px;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+  }
+
+  .people_image_text1 {
+     overflow: hidden;
+     margin-top: 120px;
+     font-size: 70px;
+  }
+
+  .people_image_text2{
+    overflow: hidden;
+    margin-top: 60px;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .people_image_text3 {
+    font-size: 20px;
+    line-height: 50px;
+    margin-right: 10px;
+  }
+
+
+  .copyright_2 {
+    width: 1440px;
+    height: 100px;
+    background-color: #FF914D;
+    display: grid;
+    place-items: center;
+    text-align: center;
+  }
+
+  </style>
+</head>
+
+<body>
+  <div class="header">
+
+    <a href="index.html">
+    <img src="icon.png" alt="Icon" class="icon">
+    </a>
+
+    <div class="menu">
+      <a href="1.html">Aim/Mission Purpose</a>
+      <a href="2.html">Why is it important?</a>
+      <a href="3.html">NGOs Info</a>
+      <a href="4.html">How can YOU help?</a>
+      <a href="5.html">About Us</a>
+      <a href="6.html">Register NOW</a>
+      </div>
+    </div>
+
+    <div class="about_us_image">
+      <img src="test.png" alt="image_1" class="image_1">
+    </div>
+
+
+  <img class="people_image_image"src="about_us_people_image.png" width="700"height="500">
+    <p class="people_image_text1">Introduce ourselves</p>
+    <p class="people_image_text2">From left: Tristan, Lee, Jihong, Joshua</p>
+    <p class="people_image_text3">  We are a group of 9th grade students in AES. Our project is to raise funds through
+      a 3v3 basketball event and, together with an NGO called Palna(which supports children
+      in need of shelter, family, and basic life necessities), raise awareness and educate
+      malnourished kids in the camps near AES, such as Vivekanand and Sanjay.</p>
+
+
+
+<div class="copyright_2">
+  <p>Copyright © 2024 3v3 Basketball Tournament Foundation</p>
+</div>
+
+<script src="about_us.js"></script>
+
+</body>
+</html>
